@@ -18,6 +18,7 @@ var CookieUI =
     CookieUI._tree=document.getElementById("permissionsTree");
     
     CookieUI._tree.addEventListener("select",CookieUI.siteSelect,false);
+    CookieUI._tree.addEventListener("focus",CookieUI.siteSelect,false);
     CookieUI._textbox.addEventListener("input",CookieUI.urlKeyPress,false);
     document.getElementById("btnBlock").addEventListener("command",CookieUI.buttonPress,false);
     document.getElementById("btnSession").addEventListener("command",CookieUI.buttonPress,false);

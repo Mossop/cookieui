@@ -33,18 +33,25 @@ var CookieUI =
   {
     var psvc = Components.classes["@mozilla.org/preferences-service;1"]
                          .getService(Components.interfaces.nsIPrefBranch);
-    if (psvc.prefHasUserValue("network.cookie.blockFutureCookies"))
+    var oldBlock = psvc.getBoolPref("network.cookie.blockFutureCookies");
+    if (!oldBlock)
     {
-      var oldBlock = psvc.getBoolPref("network.cookie.blockFutureCookies");
-      psvc.setBoolPref("network.cookie.blockFutureCookies",true);
-      gCookiesWindow.deleteCookie();
-      psvc.setBoolPref("network.cookie.blockFutureCookies",oldBlock);
+      if (psvc.prefHasUserValue("network.cookie.blockFutureCookies"))
+      {
+        psvc.setBoolPref("network.cookie.blockFutureCookies",true);
+        gCookiesWindow.deleteCookie();
+        psvc.setBoolPref("network.cookie.blockFutureCookies",oldBlock);
+      }
+      else
+      {
+        psvc.setBoolPref("network.cookie.blockFutureCookies",true);
+        gCookiesWindow.deleteCookie();
+        psvc.clearUserPref("network.cookie.blockFutureCookies");
+      }
     }
     else
     {
-      psvc.setBoolPref("network.cookie.blockFutureCookies",true);
       gCookiesWindow.deleteCookie();
-      psvc.clearUserPref("network.cookie.blockFutureCookies");
     }
   },
   
