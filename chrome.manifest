@@ -1,0 +1,3 @@
+content	cookieui	file:chrome/content/
+skin	cookieui	classic/1.0	file:chrome/skin/
+locale	cookieui	en-US	file:chrome/locale/en-US/
