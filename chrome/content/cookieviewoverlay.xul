@@ -9,8 +9,6 @@ $Revision$
 The overlay to the cookie view window.
 -->
 
-<?xml-stylesheet href="chrome://jsoptions/skin/overlay.css"?>
-
 <overlay id="CookieViewOverlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!--
+$HeadURL$
+$LastChangedBy$
+$Date$
+$Revision$
+
+The overlay to the permissions window.
+-->
+
+<overlay id="PermissionsOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://cookieui/content/permissions.js"/>
+
+<window id="PermissionsDialog">
+
+</window>
+
+</overlay>
