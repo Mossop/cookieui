@@ -1,4 +1,5 @@
-content	cookieui	file:chrome/content/
-locale	cookieui	en-US	file:chrome/locale/en-US/
+content	cookieui	jar:chrome/cookieui.jar!/content/
+skin	cookieui	classic/1.0	jar:chrome/cookieui.jar!/skin/
+locale	cookieui	en-US	jar:chrome/cookieui.jar!/locale/en-US/
 overlay	chrome://browser/content/preferences/cookies.xul	chrome://cookieui/content/cookieviewoverlay.xul
 overlay	chrome://browser/content/preferences/permissions.xul	chrome://cookieui/content/permissionsoverlay.xul
