@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!--
+$HeadURL$
+$LastChangedBy$
+$Date$
+$Revision$
+
+The overlay to the cookie view window.
+-->
+
+<?xml-stylesheet href="chrome://jsoptions/skin/overlay.css"?>
+
+<overlay id="CookieViewOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://cookieui/content/cookieview.js"/>
+
+<window id="CookiesDialog">
+
+  <stringbundle id="cookieviewlocale" src="chrome://cookieui/locale/cookieview.properties"/>
+
+</window>
+
+</overlay>
