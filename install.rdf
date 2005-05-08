@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{074dc9b3-40cc-497f-b77c-5eb9c446c922}</em:id>
-    <em:version>0.1</em:version>
+    <em:version>0.2</em:version>
     
     <!-- Target Application this extension can install into, 
         with minimum and maximum supported versions. --> 
@@ -19,11 +19,11 @@
     
     <!-- Front End MetaData -->
     <em:name>Cookie Extras</em:name>
-    <em:description>Inproves the cookie handling in the new options.</em:description>
+    <em:description>Improves the cookie handling in the new options.</em:description>
     <em:creator>Dave Townsend</em:creator>
     <em:homepageURL>http://www.blueprintit.co.uk/~dave/web/firefox/cookieui/index.html</em:homepageURL>
-    <em:updateURL>http://www.blueprintit.co.uk/~dave/web/firefox/cookieui/cookieui.rdf</em:updateURL>
-    <em:iconURL>chrome://cookieui/skin/icon.jpg</em:iconURL>
+    <em:updateURL>http://www.blueprintit.co.uk/~dave/web/firefox/update.rdf?guid=%ITEM_ID%</em:updateURL>
+    <em:iconURL>chrome://cookieui/skin/icon.png</em:iconURL>
     
   </Description>      
 </RDF>
