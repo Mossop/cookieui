@@ -4,8 +4,8 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:id>{074dc9b3-40cc-497f-b77c-5eb9c446c922}</em:id>
-    <em:version>0.2.1</em:version>
+    <em:id>@id@</em:id>
+    <em:version>@version@</em:version>
     
     <!-- Target Application this extension can install into, 
         with minimum and maximum supported versions. --> 
@@ -22,6 +22,7 @@
     <em:description>Improves the cookie handling in the new options.</em:description>
     <em:creator>Mossop</em:creator>
     <em:contributor>Andrea &amp; Luana (Italian translation)</em:contributor>
+    <em:contributor>Xavier Robin (French translation)</em:contributor>
     <em:homepageURL>http://users.blueprintit.co.uk/~dave/web/firefox/cookieui/index.html</em:homepageURL>
     <em:updateURL>http://users.blueprintit.co.uk/~dave/web/firefox/update.rdf?guid=%ITEM_ID%&amp;version=%ITEM_VERSION%&amp;app=%APP_ID%&amp;appver=%APP_VERSION%</em:updateURL>
     <em:iconURL>chrome://cookieui/skin/icon.png</em:iconURL>
